@@ -1,0 +1,25 @@
+@use "sass:math";
+
+// ========================================= //
+//           Foundation typography           //
+// ========================================= //
+
+/**
+ * This file defines the default font sizes to be used on headings
+ * from the palette defined in _variables.scss.
+ */
+
+
+
+
+
+// ========================================= //
+//                 Font sizes                //
+// ========================================= //
+
+
+@for $size from 8 through 64 {
+    .izi-fz-#{$size} {
+        font-size: pxToRem($size);
+    }
+}

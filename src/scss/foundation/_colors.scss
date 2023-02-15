@@ -1,0 +1,35 @@
+// ========================================= //
+//            Foundation - colors            //
+// ========================================= //
+
+/** 
+ * This file defines the actual colors that will be used for styling.
+ * They will default to the palette with variables we defined in the _variable.scss file.
+ * This is our default palette, and devs can ovveride this with their own variables.
+*/
+
+
+
+
+
+// ========================================= //
+//                    Body                   //
+// ========================================= //
+
+
+/* Background */
+$background-100-color: var(--izi-background-100-color, $white)          !default;
+$background-200-color: var(--izi-background-200-color, $olx-background) !default;
+
+
+
+
+
+// ========================================= //
+//                  Buttons                  //
+// ========================================= //
+
+
+/* Background */
+$btn-bg-color: var(--izi-btn-bg-color, $olx-dark)  !default;
+$btn-font-color: var(--izi-btn-font-color, $white) !default;

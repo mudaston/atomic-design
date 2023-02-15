@@ -1,0 +1,16 @@
+// ========================================= //
+//           Foundation classnames           //
+// ========================================= //
+
+
+$class-names: (
+    font-size: 'izi-fz'
+);
+
+
+
+:export {
+    @each $key, $value in $class-names {
+        #{$key}: unquote($value);
+    }
+}
