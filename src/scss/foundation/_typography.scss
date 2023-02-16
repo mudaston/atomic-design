@@ -18,8 +18,23 @@
 // ========================================= //
 
 
-@for $size from 8 through 64 {
-    .izi-fz-#{$size} {
-        font-size: pxToRem($size);
+@each $key, $value in $font-sizes {
+    .izi-fz-#{$key} {
+        font-size: $value;
+    }
+}
+
+
+
+
+
+// ========================================= //
+//                Font weights               //
+// ========================================= //
+
+
+@each $weight in $font-weights {
+    .izi-fw-#{$weight} {
+        font-weight: $weight;
     }
 }
