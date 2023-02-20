@@ -4,7 +4,7 @@ import cnBind from 'classnames/bind'
 import classes from './H2.module.scss'
 
 interface H2Props {
-	children?: String
+	children?: string
 	className?: string
 }
 

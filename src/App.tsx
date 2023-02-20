@@ -1,11 +1,12 @@
-import { H1, H2, H3, H4, H5, H6 } from '@/components/atoms/headings'
 import Primary from './components/atoms/buttons/Primary'
+
+import { H1, H2, H3, H4, H5, H6 } from '@/components/atoms/headings'
 
 import './App.css'
 
 function App() {
 	return (
-		<div className="App">
+		<div className='App'>
 			<H1>Hello world</H1>
 			<H2>Hello world</H2>
 			<H3>Hello world</H3>
