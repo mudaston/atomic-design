@@ -1,0 +1,12 @@
+name: Atomic-design-ci
+on:
+  push:
+    paths-ignore:
+      - .github/workflows/*
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show test message
+        run: echo "Hello world!"
