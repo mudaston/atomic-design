@@ -18,6 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
   test:
+    needs: [lint]
     runs-on: ubuntu-latest
     steps:
       - name: Get repository
