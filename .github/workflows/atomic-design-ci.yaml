@@ -18,10 +18,10 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
       - name: Install dependencies
         if: steps.cacheStep.outputs.cache-hit != 'true'
         run: npm ci
@@ -29,6 +29,8 @@ jobs:
     needs: [cache-node_modules]
     runs-on: ubuntu-latest
     steps:
+      - name: Get repository
+        uses: actions/checkout@v3
       - name: Install dependencies
         if: steps.cacheStep.outputs.cache-hit != 'true'
         run: npm ci
@@ -38,6 +40,8 @@ jobs:
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
+      - name: Get repository
+        uses: actions/checkout@v3
       - name: Install dependencies
         if: steps.cacheStep.outputs.cache-hit != 'true'
         run: npm ci
