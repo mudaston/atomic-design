@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import classnames from '@/scss/foundation/_classnames.module.scss'
 
 type useClassNameReturn = (

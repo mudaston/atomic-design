@@ -4,7 +4,7 @@ import cnBind from 'classnames/bind'
 import classes from './H6.module.scss'
 
 interface H6Props {
-	children?: String
+	children?: string
 	className?: string
 }
 
