@@ -12,11 +12,11 @@
 		"module": "ESNext",
 		"moduleResolution": "Node",
 		"resolveJsonModule": true,
-		"isolatedModules": true,
+		"isolatedModules": false,
 		"noEmit": true,
 		"jsx": "react-jsx",
 		// path aliases
-		"types": ["node"],
+		"types": ["node", "jest"],
 		"paths": {
 			"@/*": ["./src/*"]
 		},
