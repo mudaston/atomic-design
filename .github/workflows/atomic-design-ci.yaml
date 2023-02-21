@@ -3,6 +3,9 @@ on:
   push:
     paths-ignore:
       - .github/workflows/*
+  pull_request:
+    paths-ignore:
+      - .github/workflows/*
   workflow_dispatch:
 jobs:
   cache-node_modules:
