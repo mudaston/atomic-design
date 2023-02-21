@@ -2,7 +2,7 @@
   "name": "atomic-design",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://{github-username}.github.io/atomic-design",
+  "homepage": "http://mudaston.github.io/atomic-design",
   "type": "module",
   "scripts": {
     "dev": "vite",
