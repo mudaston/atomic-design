@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
 	return (
-		<div className='App' style={{ background: 'red' }}>
+		<div className='App' style={{ background: 'blue' }}>
 			<H1>Hello world</H1>
 			<H2>Hello world</H2>
 			<H3>Hello world</H3>
